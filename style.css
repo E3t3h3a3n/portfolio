@@ -88,6 +88,21 @@ a {
     color: #ffff;
 }
 
+li {
+    color: grey;
+}
+
+button {
+    background-color: #395A87;
+    color: #ffff;
+    border-radius: 10px;
+    border-color: #ffff;
+}
+
+HR {
+    color: #ffff;
+    width: 20px;
+}
 @font-face {
   font-family: 'The Seasons';
   src: url('font/Demo_Fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype');
