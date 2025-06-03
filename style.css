@@ -84,6 +84,7 @@ h1, h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 .art-item, .work-item {
     width: calc(33.333% - 20px);
@@ -245,12 +246,59 @@ h1{
   object-fit: cover;
 }
 
-#presentation h2{
+h2{
     font-size: 3rem;
 }
 
+#presentation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #395A87;
+  color: white;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: auto;
+  height: 100vh;
+  gap: 2rem;
+}
+
+#presentation > div {
+  flex: 1 1 60%;
+  max-width: 600px;
+}
+
+#presentation h2 {
+  font-family: 'The Seasons', serif;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+#presentation p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+#presentation hr {
+  width: 40px;
+  border: none;
+  border-top: 2px solid white;
+  margin: 20px 0;
+}
+
+#presentation img {
+  width: 250px;
+  height: 350px;
+  border-radius: 50px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+
 .compétence img {
-    width: 60px;  /* ou toute autre taille souhaitée */
+    width: 60px;
     height: 60px;
     object-fit: contain;
 }
