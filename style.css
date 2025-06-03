@@ -173,15 +173,6 @@ height: 100%;
 transform: rotate(20deg);
 }
 
-section{
-    height: 100vh;
-}
-
-h1{
-    font-size: 200%;
-}
-
-
 #accueil {
   height: 100vh;
   display: flex;
@@ -290,9 +281,42 @@ h2{
 #presentation img {
   width: 250px;
   height: 350px;
-  border-radius: 50px;
-  object-fit: cover;
-  flex-shrink: 0;
+  border-radius: 160px 100px;
+}
+
+#experience {
+  background-color: #395A87;
+  color: white;
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  height: 100vh;
+  font-family: 'Georgia', serif;
+}
+
+#experience > h2 {
+  font-size: 3rem;
+  font-family: 'The Seasons', serif;
+  margin-bottom: 3rem;
+}
+
+#experience > h3 {
+  font-size: 1.5rem;
+  font-family: 'The Seasons', serif;
+  font-weight: normal;
+  margin: 2rem 0 1rem;
+}
+
+#experience > ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  padding: 0;
+}
+
+#experience > ul > li {
+  color: grey;
+  margin-bottom: 0.5rem;
+  font-family: 'Georgia', serif;
 }
 
 
