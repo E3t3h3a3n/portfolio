@@ -80,19 +80,38 @@ h1, h2 {
 .experience, .art, .contact {
     margin-top: 40px;
 }
-.art-grid, .works-grid {
+.works-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-.art-item, .work-item {
+
+.art-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    grid-template-rows: repeat(2, auto);   /* 2 lignes */
+    gap: 20px;
+    justify-items: center;
+}
+
+.work-item {
     width: calc(33.333% - 20px);
     background: #324E6A;
     border-radius: 20px;
     padding: 10px;
     text-align: center;
 }
+
+.art-item {
+    width: 100%;
+    max-width: 300px;
+    background: #324E6A;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
 .art-item img, .work-item img {
     max-width: 100%;
     border-radius: 20px;
@@ -290,7 +309,7 @@ h2{
   padding: 5rem 2rem;
   max-width: 1200px;
   margin: auto;
-  height: 100vh;
+  height: 70vh;
   font-family: 'Georgia', serif;
 }
 
@@ -319,7 +338,9 @@ h2{
   font-family: 'Georgia', serif;
 }
 
-
+#competence{
+  height: 100vh;
+}
 
 .compétence img {
     width: 60px;
