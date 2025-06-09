@@ -343,6 +343,10 @@ h2{
   font-family: 'Georgia', serif;
 }
 
+#experience a {
+  color: inherit;
+}
+
 #presentation a{
   color: #B0BCCB;
 }
