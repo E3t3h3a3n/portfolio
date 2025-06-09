@@ -290,6 +290,10 @@ h2{
   max-width: 600px;
 }
 
+#presentation a{
+  color: #B0BCCB;
+}
+
 #presentation p {
   font-size: 1.2rem;
   line-height: 1.6;
