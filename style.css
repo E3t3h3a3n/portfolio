@@ -162,7 +162,8 @@ button {
 
 HR {
     color: #ffff;
-    width: 20px;
+    width: 200px;
+    margin: 0 0 40px 40px;
 }
 @font-face {
   font-family: 'The Seasons';
@@ -171,8 +172,18 @@ HR {
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('font/static/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1{
   font-family: 'The Seasons', serif;
+}
+
+h2, h3, h4, h5, h6{
+  font-family: 'PlayfairDisplay', serif;
 }
 
 .image-wrapper {
@@ -279,12 +290,6 @@ h2{
   max-width: 600px;
 }
 
-#presentation h2 {
-  font-family: 'The Seasons', serif;
-  font-size: 3rem;
-  margin-bottom: 3rem;
-}
-
 #presentation p {
   font-size: 1.2rem;
   line-height: 1.6;
@@ -333,7 +338,7 @@ h2{
 }
 
 #experience > ul > li {
-  color: grey;
+  color: 	#B0BCCB;
   margin-bottom: 0.5rem;
   font-family: 'Georgia', serif;
 }
@@ -348,3 +353,17 @@ h2{
     object-fit: contain;
 }
 
+#contact{
+  height: 50vh;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  height: 100%;
+  overflow-y: scroll;
+}
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
